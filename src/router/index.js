@@ -61,6 +61,46 @@ const routes = [
         /* webpackChunkName: 'mixin', webpackPrefecth: true */ '../views/MixinView.vue'
       ),
   },
+  {
+    path: '/calculator',
+    name: 'CalculatorView',
+    component: () =>
+      import(
+        /* webpackChunkName: 'calculator', webpackPrefetch: true */ '../views/CalculatorView.vue'
+      ),
+  },
+  {
+    path: '/compositionapi',
+    name: 'CompositionAPIView',
+    component: () =>
+      import(
+        /* webpackChunkName: 'compositionapi', webpackPrefetch: true */ '../views/CompositionAPIView.vue'
+      ),
+  },
+  {
+    path: '/compositionapi2',
+    name: 'CompositionAPIView2',
+    component: () =>
+      import(
+        /* webpackChunkName: 'compositionapi', webpackPrefetch: true */ '../views/CompositionAPIView2.vue'
+      ),
+  },
+  {
+    path: '/compositionapi3',
+    name: 'CompositionAPIView3',
+    component: () =>
+      import(
+        /* webpackChunkName: 'compositionapi', webpackPrefetch: true */ '../views/CompositionAPIView3.vue'
+      ),
+  },
+  {
+    path: '/compositionapi4',
+    name: 'CompositionAPIView4',
+    component: () =>
+      import(
+        /* webpackChunkName: 'compositionapi', webpackPrefetch: true */ '../views/CompositionAPIView4.vue'
+      ),
+  },
 ];
 
 const router = createRouter({
