@@ -4,24 +4,61 @@ import HomeView from '../views/HomeView.vue';
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'HomeView',
     component: HomeView,
   },
   {
     path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    name: 'AboutView',
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+      import(/* webpackChunkName: 'about' */ '../views/AboutView.vue'),
   },
   {
     path: '/serverdata',
-    name: 'ServerData',
+    name: 'ServerDataView',
     component: () =>
       import(
-        /* webpackChunkName: "serverdata", webpackPrefetch: true */ '../views/ServerDataView.vue'
+        /* webpackChunkName: 'serverdata', webpackPrefetch: true */ '../views/ServerDataView.vue'
+      ),
+  },
+  {
+    path: '/example',
+    name: 'ExampleView',
+    component: () =>
+      import(
+        /* webpackChunkName: 'example', webpackPrefetch: true */ '../views/ExampleView.vue'
+      ),
+  },
+  {
+    path: '/example2',
+    name: 'ExampleView2',
+    component: () =>
+      import(
+        /* webpackChunkName: 'example', webpackPrefetch: true */ '../views/ExampleView2.vue'
+      ),
+  },
+  {
+    path: '/slot',
+    name: 'SlotUseModalLayout',
+    component: () =>
+      import(
+        /* webpackChunkName: 'slot', webpackPrefecth: true */ '../views/SlotUseModalLayout.vue'
+      ),
+  },
+  {
+    path: '/provideinject',
+    name: 'ProvideInject',
+    component: () =>
+      import(
+        /* webpackChunkName: 'providinject', webpackPrefecth: true */ '../views/ProvideInject.vue'
+      ),
+  },
+  {
+    path: '/mixin',
+    name: 'MixinView',
+    component: () =>
+      import(
+        /* webpackChunkName: 'mixin', webpackPrefecth: true */ '../views/MixinView.vue'
       ),
   },
 ];
