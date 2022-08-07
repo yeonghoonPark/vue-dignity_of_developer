@@ -101,6 +101,28 @@ const routes = [
         /* webpackChunkName: 'compositionapi', webpackPrefetch: true */ '../views/CompositionAPIView4.vue'
       ),
   },
+  {
+    path: '/compositionapiprovide',
+    name: 'CompositionAPIProvideView',
+    component: () =>
+      import(
+        /* webpackChunkName: 'compositionapiprovide' */ '../views/CompositionAPIProvideView.vue'
+      ),
+  },
+  {
+    path: '/customdirective',
+    name: 'CustomDirectiveView',
+    component: () =>
+      import(
+        /* webpackChunkName: 'customdirective' */ '../views/CustomDirectiveView.vue'
+      ),
+  },
+  {
+    path: '/plugins',
+    name: 'Plugins',
+    component: () =>
+      import(/* webpackChunkName: 'plugins' */ '../views/Plugins.vue'),
+  },
 ];
 
 const router = createRouter({
