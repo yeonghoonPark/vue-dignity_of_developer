@@ -123,6 +123,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: 'plugins' */ '../views/Plugins.vue'),
   },
+  {
+    path: '/googlelogin',
+    name: 'GoogleLogin',
+    component: () =>
+      import(/* webpackChunkName: 'googlelogin' */ '../views/GoogleLogin.vue'),
+  },
 ];
 
 const router = createRouter({
